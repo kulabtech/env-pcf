@@ -33,7 +33,7 @@ public class LoggerApplication implements CommandLineRunner{
 	public String process() {
 		log.info("Hello World {}", env.getProperty("env-var1"));
 		String s= env.getProperty("env-var1");
-		String s1= "Hello World !!!. " + (s==null ?"Please set env-var1" : "Received environment variable env-var1. value :->")+env.getProperty("JAVA_HOME") ;
+		String s1= "Hello World !!!. " + (s==null ?"Please set env-var1:" : "Received environment variable env-var1. value :->")+env.getProperty("JAVA_HOME") ;
 		return s1;
 	}
 
