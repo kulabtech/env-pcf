@@ -1,7 +1,7 @@
 ---
 applications:
-- name: envapp
-  instances: 2
+- name: envtest
+  instances: 1
   memory: 1500M
   buildpack: java_buildpack
   path: ./target/logger-0.0.1-SNAPSHOT.jar
