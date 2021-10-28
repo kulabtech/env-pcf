@@ -1,14 +1,14 @@
 pipeline {
  agent any
  tools{
-     maven 'M2_HOME'
+     maven 'Maven'
       }
      stages{
          stage('CheckoutCode')
           {
             steps
              {
-                git credentialsId: 'GIT_CREDS', url: 'https://github.com/shaanu1998/allstates_demo.git' , branch: 'backend'
+                git credentialsId: 'git_creds', url: 'https://github.com/kulabtech/env-pcf.git' , branch: 'master'
              }
           }
          stage ('Build') 
