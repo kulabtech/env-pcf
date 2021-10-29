@@ -20,5 +20,5 @@ pipeline {
         }
     }
 }
-// some file
+// some file in jenkins
 
